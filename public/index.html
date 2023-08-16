@@ -6,17 +6,89 @@
     <link rel="stylesheet" href="./build/tailwind.css">
     <title>omnivus</title>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-100">
+
+    <!-- contact start -->
+    <div class="w-full bg-white p-2 border-b border-blue-200 hidden md:block">
+        <div class="container xl:max-w-[1300px] flex justify-between items-center top-0 z-30 text-gray-400 text-sm">
+            <div class="flex gap-4">
+                <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-phone-flip text-blue-400"></i>
+                    <p>+86 8952 314 56</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-envelope text-blue-400"></i>
+                    <p>konsolinfo@gmail.com</p>
+                </div>
+            </div>
+            <div>
+                <ul class="flex gap-4">
+                    <li><i class="fa-brands fa-facebook-f hover:text-blue-600 cursor-pointer transition-all"></i></li>
+                    <li><i class="fa-brands fa-twitter hover:text-blue-600 cursor-pointer transition-all"></i></li>
+                    <li><i class="fa-brands fa-behance hover:text-blue-600 cursor-pointer transition-all"></i></li>
+                    <li><i class="fa-brands fa-youtube hover:text-blue-600 cursor-pointer transition-all"></i></li>
+                    <li><i class="fa-solid fa-basketball hover:text-blue-600 cursor-pointer transition-all"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- contact start -->
+
+    <!-- navbar start -->
+    <nav class="bg-white p-3 sticky top-0 z-30 w-full shadow-md">
+        <div class="container xl:max-w-[1300px] relative flex justify-between items-center">
+            <div class="flex flex-col gap-1">
+                <h1 class="text-blue-600 text-3xl font-bold">OmniVus.</h1>
+                <p class="text-xs">IT Service & Technology</p>
+            </div>
+            <div id="menuBar" class="absolute md:static left-[-900px] top-16 p-12 md:p-0 shadow-md bg-white md:shadow-none transition-all w-4/5">
+                <ul class="flex flex-col md:flex-row md:justify-end md:items-center xl:gap-8 gap-4 text-gray-600">
+                    <li class="hover:text-blue-600 cursor-pointer transition-all font-semibold">Home</li>
+                    <li class="hover:text-blue-600 cursor-pointer transition-all font-semibold">Company</li>
+                    <li class="hover:text-blue-600 cursor-pointer transition-all font-semibold">Blog</li>
+                    <li class="hover:text-blue-600 cursor-pointer transition-all font-semibold">Portfolio</li>
+                    <li class="hover:text-blue-600 cursor-pointer transition-all font-semibold">Shop</li>
+                    <li class="hover:text-blue-600 cursor-pointer transition-all font-semibold">Contact</li>
+                    <li class="hover:text-blue-600 cursor-pointer transition-all">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </li>
+                    <li class="hover:text-blue-600 cursor-pointer transition-all">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </li>
+                    <li class="md:hidden lg:block">
+                        <a class="w-fit py-3 px-6 rounded-md text-white border-2 border-blue-600 bg-blue-600 flex items-center gap-2 hover:bg-blue-950 hover:border-blue-950 transition-all" href="">
+                            <p class="font-semibold text-sm">Free consulting</p>
+                            <i class="fa-solid fa-arrow-right-long pt-1"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="menuIcon" class="md:hidden">
+                <i class="fa-solid fa-bars text-3xl text-blue-600"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar start -->
+
     <!-- banner start -->
-    <div class="bg-[linear-gradient(90deg,rgba(64,117,236,1)0%,rgba(44,44,231,0)100%),url('/assets/images/16127970561434260582.jpg')] bg-center bg-cover w-full h-auto py-32 px-4 relative">
-        <div class="container xl:max-w-[1300px] flex flex-col gap-10 text-white">
-            <h3 class="text-xl md:text-2xl font-bold">IT Business Consulting</h3>
-            <h1 class="text-4xl md:text-5xl md:w-2/3 lg:text-7xl font-bold">Best IT Soluations Provider Agency</h1>
-            <p class="font-medium md:w-3/5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremda tium totam rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
-            <a class="w-fit py-4 px-8 rounded-lg bg-white text-blue-600 flex items-center gap-2 hover:bg-blue-950 transition-all group" href="">
-                <p class="font-semibold group-hover:text-white">Our Services</p>
-                <i class="fa-solid fa-arrow-right-long pt-1 group-hover:text-white"></i>
-            </a>
+    <div class="bg-[linear-gradient(90deg,rgba(37,99,235,1)20%,rgba(37,99,235,0.6)50%,rgba(37,99,235,0.2)100%),url('/assets/images/16127970561434260582.jpg')] bg-top bg-cover w-full h-auto py-32 px-4 relative">
+        <div class="container xl:max-w-[1500px] flex flex-col lg:flex-row gap-4 items-center justify-between relative">
+            <div class="w-10 h-10 absolute bottom-[-100px] right-16 lg:static cursor-pointer border border-blue-600 border-opacity-25 flex justify-center items-center bg-white rounded-full text-blue-600">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="flex flex-col gap-10 text-white md:w-4/5 lg:11/12">
+                <h3 class="text-xl md:text-2xl font-bold tracking-widest">IT Business Consulting</h3>
+                <h1 class="text-4xl md:text-5xl md:w-4/5 lg:text-7xl font-bold">Best IT Soluations Provider Agency</h1>
+                <p class="font-medium md:w-3/5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremda tium totam rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
+                <a class="w-fit py-4 px-8 rounded-md bg-white text-blue-600 flex items-center gap-2 hover:bg-blue-950 transition-all group" href="">
+                    <p class="font-semibold group-hover:text-white">Our Services</p>
+                    <i class="fa-solid fa-arrow-right-long pt-1 group-hover:text-white"></i>
+                </a>
+            </div>
+            <div class="w-10 h-10 absolute bottom-[-100px] right-4 lg:static cursor-pointer border border-blue-600 flex justify-center items-center bg-blue-600 rounded-full text-white">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
         </div>
     </div>
     <!-- banner finish -->
@@ -33,42 +105,52 @@
     <!-- who we are start -->
 
     <!-- services start -->
-    <div class="container xl:max-w-[1100px] my-12 grid grid-cols-1 md:grid-rows-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="flex flex-col group hover:bg-blue-600 transition-all p-4 gap-4 items-center justify-between px-4 py-10 bg-white shadow-md relative">
+    <div class="container xl:max-w-[1100px] my-24 grid grid-cols-1 md:grid-rows-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="flex flex-col group hover:bg-blue-600 transition-all py-14 px-4 gap-4 items-center justify-between bg-white shadow-md relative cursor-pointer">
                 <i class="fa-solid text-5xl fa-laptop-code text-blue-600 group-hover:text-white"></i>
                 <h5 class="text-xl font-bold text-blue-950 group-hover:text-white">IT Soluations</h5>
-                <p class="text-center text-sm text-gray-600 group-hover:text-white">Sed ut perspiciatis unde omnis iste natus error volup</p>
-                <span class="absolute"></span>
+                <p class="text-center text-sm text-gray-600 group-hover:text-white leading-6">Sed ut perspiciatis unde omnis iste natus error volup</p>
+                <span class="absolute right-0 py-2 px-3 group-hover:bg-white bottom-0 bg-blue-600 text-lg transition-all">
+                        <i class="fa-solid fa-arrow-right-long pt-1 text-white group-hover:text-blue-600"></i>
+                    </span>
             </div>
-            <div class="flex flex-col group hover:bg-blue-600 transition-all p-4 gap-4 items-center justify-between px-4 py-10 bg-white shadow-md relative">
+            <div class="flex flex-col group hover:bg-blue-600 transition-all py-14 px-4 gap-4 items-center justify-between bg-white shadow-md relative cursor-pointer">
                 <i class="fa-solid fa-fingerprint text-5xl text-blue-600 group-hover:text-white"></i>
                 <h5 class="text-xl font-bold text-blue-950 group-hover:text-white">Security System</h5>
-                <p class="text-center text-sm text-gray-600 group-hover:text-white">Sed ut perspiciatis unde omnis iste natus error volup</p>
-                <span class="absolute"></span>
+                <p class="text-center text-sm text-gray-600 group-hover:text-white leading-6">Sed ut perspiciatis unde omnis iste natus error volup</p>
+                <span class="absolute right-0 py-2 px-3 group-hover:bg-white bottom-0 bg-blue-600 text-lg transition-all">
+                        <i class="fa-solid fa-arrow-right-long pt-1 text-white group-hover:text-blue-600"></i>
+                    </span>
             </div>
-            <div class="flex flex-col group hover:bg-blue-600 transition-all p-4 gap-4 items-center justify-between px-4 py-10 bg-white shadow-md relative">
+            <div class="flex flex-col group hover:bg-blue-600 transition-all py-14 px-4 gap-4 items-center justify-between bg-white shadow-md relative cursor-pointer">
                 <i class="fa-solid fa-tv text-5xl text-blue-600 group-hover:text-white"></i>
                 <h5 class="text-xl font-bold text-blue-950 group-hover:text-white">Web Development</h5>
-                <p class="text-center text-sm text-gray-600 group-hover:text-white">Sed ut perspiciatis unde omnis iste natus error volup</p>
-                <span class="absolute"></span>
+                <p class="text-center text-sm text-gray-600 group-hover:text-white leading-6">Sed ut perspiciatis unde omnis iste natus error volup</p>
+                <span class="absolute right-0 py-2 px-3 group-hover:bg-white bottom-0 bg-blue-600 text-lg transition-all">
+                        <i class="fa-solid fa-arrow-right-long pt-1 text-white group-hover:text-blue-600"></i>
+                    </span>
             </div>
-            <div class="flex flex-col group hover:bg-blue-600 transition-all p-4 gap-4 items-center justify-between px-4 py-10 bg-white shadow-md relative">
+            <div class="flex flex-col group hover:bg-blue-600 transition-all py-14 px-4 gap-4 items-center justify-between bg-white shadow-md relative cursor-pointer">
                 <i class="fa-solid fa-database text-5xl text-blue-600 group-hover:text-white"></i>
                 <h5 class="text-xl font-bold text-blue-950 group-hover:text-white">Database Security</h5>
-                <p class="text-center text-sm text-gray-600 group-hover:text-white">Sed ut perspiciatis unde omnis iste natus error volup</p>
-                <span class="absolute"></span>
+                <p class="text-center text-sm text-gray-600 group-hover:text-white leading-6">Sed ut perspiciatis unde omnis iste natus error volup</p>
+                <span class="absolute right-0 py-2 px-3 group-hover:bg-white bottom-0 bg-blue-600 text-lg transition-all">
+                        <i class="fa-solid fa-arrow-right-long pt-1 text-white group-hover:text-blue-600"></i>
+                    </span>
             </div>
     </div>
     <!-- services start -->
 
     <!-- How we growth start -->
-    <div class="bg-[linear-gradient(90deg,rgba(0,0,0,0.65)100%,rgba(44,44,231,0)100%),url('/assets/images/IMG_1993.webp')] my-12 bg-center bg-cover h-auto pt-24 pb-72 px-4">
-        <div class="container xl:max-w-[1100px] flex flex-col md:flex-row gap-8 justify-between">
-            <div class="flex flex-col gap-10 text-white border-8 border-gray-500 border-opacity-50 p-12 md:w-2/3">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">Get Better solution For Your Business</h1>
-                <p class="font-medium">hether you are building an enterprise web portal or a state-of-the-art website, you always need the right modern tools. Well-built and maintained PHP frameworks provide those tools in abundance, allowing</p>
+    <div class="bg-[url('/assets/images/IMG_1993.webp')] my-12 bg-center bg-cover h-auto">
+        <div class="bg-slate-950 bg-opacity-75 w-full h-full pt-24 pb-72 px-4">
+            <div class="container xl:max-w-[1100px] flex flex-col md:flex-row gap-8 justify-between">
+                <div class="flex flex-col gap-10 text-white border-8 border-gray-500 border-opacity-50 p-6 md:p-12 md:w-2/3">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">Get Better solution For Your Business</h1>
+                    <p class="font-medium">hether you are building an enterprise web portal or a state-of-the-art website, you always need the right modern tools. Well-built and maintained PHP frameworks provide those tools in abundance, allowing</p>
+                </div>
+                <div>next</div>
             </div>
-            <div>next</div>
         </div>
     </div>
     <!-- How we growth finish -->
@@ -76,60 +158,60 @@
     <!-- latest services start -->
     <div class="relative top-[-200px] w-12/12">
         <div class="container xl:max-w-[1300px] relative bg-blue-600 flex flex-col items-center gap-6 xl:w-10/12 pt-16 pb-48 text-white z-10">
-            <h4>OUR LATEST SERVICES</h4>
+            <h4 class="font-medium tracking-widest">OUR LATEST SERVICES</h4>
             <h2 class="text-5xl font-bold text-center">We Offer Better Soluation</h2>
         </div>
-        <div class="container relative top-[-100px] xl:max-w-[1100px] grid items-center gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 z-20">
-            <div class="flex flex-col justify-between h-[400px] max-w-md">
-                <img class="bg-cover bg-center w-full h-[190px]" src="/assets/images/IMG_1993.webp" alt="">
+        <div class="container relative w-fit top-[-100px] xl:max-w-[1100px] grid items-center gap-12 sm:gap-6 md:gap-y-10 lg:gap-y-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 z-20">
+            <div class="flex flex-col justify-between gap-6 max-w-md">
+                <img class="bg-cover bg-center" src="/assets/images/IMG_1.webp" alt="">
                 <h3 class="text-2xl font-bold">Desktop Computing</h3>
-                <p class="text-sm text-gray-600 ">As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunit...</p>
-                <a class="w-fit py-3 px-6 rounded-lg text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
+                <p class="text-sm text-gray-600 leading-6">Sed ut perspiciatis unde omnis iste natus error sit rolubtatem accusantium doloremaue laudantiuto-tam rem aperiam eaque ipsa quae inventore</p>
+                <a class="w-fit py-3 px-6 rounded-md text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
                     <p class="font-semibold text-sm group-hover:text-white">Read More</p>
                     <i class="fa-solid fa-arrow-right-long pt-1 group-hover:text-white"></i>
                 </a>
             </div>
-            <div class="flex flex-col justify-between h-[400px] max-w-md">
-                <img class="bg-cover bg-center w-full h-[190px]" src="/assets/images/IMG_1993.webp" alt="">
-                <h3 class="text-2xl font-bold">Desktop Computing</h3>
-                <p class="text-sm text-gray-600 ">As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunit...</p>
-                <a class="w-fit py-3 px-6 rounded-lg text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
+            <div class="flex flex-col justify-between gap-6 max-w-md">
+                <img class="bg-cover bg-center" src="/assets/images/IMG_2.webp" alt="">
+                <h3 class="text-2xl font-bold">Infrastructure Planing</h3>
+                <p class="text-sm text-gray-600 leading-6">Sed ut perspiciatis unde omnis iste natus error sit rolubtatem accusantium doloremaue laudantiuto-tam rem aperiam eaque ipsa quae inventore</p>
+                <a class="w-fit py-3 px-6 rounded-md text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
                     <p class="font-semibold text-sm group-hover:text-white">Read More</p>
                     <i class="fa-solid fa-arrow-right-long pt-1 group-hover:text-white"></i>
                 </a>
             </div>
-            <div class="flex flex-col justify-between h-[400px] max-w-md">
-                <img class="bg-cover bg-center w-full h-[190px]" src="/assets/images/IMG_1993.webp" alt="">
-                <h3 class="text-2xl font-bold">Desktop Computing</h3>
-                <p class="text-sm text-gray-600 ">As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunit...</p>
-                <a class="w-fit py-3 px-6 rounded-lg text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
+            <div class="flex flex-col justify-between gap-6 max-w-md">
+                <img class="bg-cover bg-center" src="/assets/images/IMG_3.webp" alt="">
+                <h3 class="text-2xl font-bold">Big Data & Analytics</h3>
+                <p class="text-sm text-gray-600 leading-6">Sed ut perspiciatis unde omnis iste natus error sit rolubtatem accusantium doloremaue laudantiuto-tam rem aperiam eaque ipsa quae inventore</p>
+                <a class="w-fit py-3 px-6 rounded-md text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
                     <p class="font-semibold text-sm group-hover:text-white">Read More</p>
                     <i class="fa-solid fa-arrow-right-long pt-1 group-hover:text-white"></i>
                 </a>
             </div>
-            <div class="flex flex-col justify-between h-[400px] max-w-md">
-                <img class="bg-cover bg-center w-full h-[190px]" src="/assets/images/IMG_1993.webp" alt="">
-                <h3 class="text-2xl font-bold">Desktop Computing</h3>
-                <p class="text-sm text-gray-600 ">As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunit...</p>
-                <a class="w-fit py-3 px-6 rounded-lg text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
+            <div class="flex flex-col justify-between gap-6 max-w-md">
+                <img class="bg-cover bg-center" src="/assets/images/IMG_4.webp" alt="">
+                <h3 class="text-2xl font-bold">IT Management System</h3>
+                <p class="text-sm text-gray-600 leading-6">Sed ut perspiciatis unde omnis iste natus error sit rolubtatem accusantium doloremaue laudantiuto-tam rem aperiam eaque ipsa quae inventore</p>
+                <a class="w-fit py-3 px-6 rounded-md text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
                     <p class="font-semibold text-sm group-hover:text-white">Read More</p>
                     <i class="fa-solid fa-arrow-right-long pt-1 group-hover:text-white"></i>
                 </a>
             </div>
-            <div class="flex flex-col justify-between h-[400px] max-w-md">
-                <img class="bg-cover bg-center w-full h-[190px]" src="/assets/images/IMG_1993.webp" alt="">
-                <h3 class="text-2xl font-bold">Desktop Computing</h3>
-                <p class="text-sm text-gray-600 ">As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunit...</p>
-                <a class="w-fit py-3 px-6 rounded-lg text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
+            <div class="flex flex-col justify-between gap-6 max-w-md">
+                <img class="bg-cover bg-center" src="/assets/images/IMG_5.webp" alt="">
+                <h3 class="text-2xl font-bold">Web Development</h3>
+                <p class="text-sm text-gray-600 leading-6">Sed ut perspiciatis unde omnis iste natus error sit rolubtatem accusantium doloremaue laudantiuto-tam rem aperiam eaque ipsa quae inventore</p>
+                <a class="w-fit py-3 px-6 rounded-md text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
                     <p class="font-semibold text-sm group-hover:text-white">Read More</p>
                     <i class="fa-solid fa-arrow-right-long pt-1 group-hover:text-white"></i>
                 </a>
             </div>
-            <div class="flex flex-col justify-between h-[400px] max-w-md">
-                <img class="bg-cover bg-center w-full h-[190px]" src="/assets/images/IMG_1993.webp" alt="">
-                <h3 class="text-2xl font-bold">Desktop Computing</h3>
-                <p class="text-sm text-gray-600 ">As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunit...</p>
-                <a class="w-fit py-3 px-6 rounded-lg text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
+            <div class="flex flex-col justify-between gap-6 max-w-md">
+                <img class="bg-cover bg-center" src="/assets/images/IMG_6.webp" alt="">
+                <h3 class="text-2xl font-bold">Dedicated IT Solution</h3>
+                <p class="text-sm text-gray-600 leading-6">Sed ut perspiciatis unde omnis iste natus error sit rolubtatem accusantium doloremaue laudantiuto-tam rem aperiam eaque ipsa quae inventore</p>
+                <a class="w-fit py-3 px-6 rounded-md text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
                     <p class="font-semibold text-sm group-hover:text-white">Read More</p>
                     <i class="fa-solid fa-arrow-right-long pt-1 group-hover:text-white"></i>
                 </a>
@@ -138,16 +220,508 @@
     </div>
     <!-- latest services finish -->
 
-    <!--  -->
-    <div class="container xl:max-w-[1100px] bg-blue-600 h-60 mt-[-200px]">
-        
+    <!-- why choose us start -->
+    <div class="w-full bg-slate-900 px-4 py-12 md:p-12 lg:py-32 mt-[-200px] text-white">
+        <div class="container xl:max-w-[1100px] flex flex-col gap-12 items-center">
+            <h4 class="font-medium tracking-widest">WHY CHOOSE US</h4>
+            <h2 class="text-4xl md:text-5xl font-bold text-center md:w-8/12">We Are Very Different From Others IT Solutions</h2>
+            <div class="grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-2 lg:grid-cols-3">
+                <div class="flex flex-col items-center gap-8">
+                    <div class="flex justify-center items-center outline outline-1 outline-gray-400 w-36 h-36 rounded-full bg-[radial-gradient(circle,rgba(84,110,180,1)20%,rgba(84,110,180,0.3)40%,rgba(84,110,180,0)60%)]">
+                        <i class="fa-solid text-5xl fa-laptop-code text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold">Modify Whole System</h3>
+                    <p class="text-center text-gray-400">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudan-tium totam.</p>
+                </div>
+                <div class="flex flex-col items-center gap-8">
+                    <div class="flex justify-center items-center outline outline-1 outline-gray-400 w-36 h-36 rounded-full bg-[radial-gradient(circle,rgba(84,110,180,1)20%,rgba(84,110,180,0.3)40%,rgba(84,110,180,0)60%)]">
+                        <i class="fa-solid fa-server text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold">Beneficial Strategies</h3>
+                    <p class="text-center text-gray-400">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudan-tium totam.</p>
+                </div>
+                <div class="flex flex-col items-center gap-8">
+                    <div class="flex justify-center items-center outline outline-1 outline-gray-400 w-36 h-36 rounded-full bg-[radial-gradient(circle,rgba(84,110,180,1)20%,rgba(84,110,180,0.3)40%,rgba(84,110,180,0)60%)]">
+                        <i class="fa-solid fa-screwdriver-wrench text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold">Automated Software</h3>
+                    <p class="text-center text-gray-400">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudan-tium totam.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <!--  -->
+    <!-- why choose us finish -->
 
-    <div class="container xl:max-w-[1100px] bg-blue-600 h-60 my-12">
-        
+    <!-- case studies start -->
+    <div class="my-24 container">
+        <div class="container xl:max-w-[1100px] w-full grid gap-4 grid-cols-1 md:grid-cols-2 md:items-end">
+            <h4 class="text-blue-600 font-medium tracking-widest md:col-span-2">LATEST CASE STUDIES</h4>
+            <h2 class="text-5xl font-bold">Reads Our Recent Case Studies</h2>
+            <div class="flex gap-2 justify-self-end">
+                <div id="backBtn" class="w-10 h-10 cursor-pointer border border-blue-600 border-opacity-25 flex justify-center items-center bg-white rounded-full text-blue-600">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div id="nextBtn" class="w-10 h-10 cursor-pointer border border-blue-600 flex justify-center items-center bg-blue-600 rounded-full text-white">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <div id="latesCaseGallery" class="my-12 overflow-x-auto text-white">
+            <ul class="flex gap-6 w-max transition-all">
+                <li class="bg-[url('/assets/images/IMG_41.webp')] bg-cover bg-center cursor-pointer w-[350px] h-[420px] relative group">
+                    <div class="bg-[linear-gradient(0deg,rgba(7,14,33,1)20%,rgba(5,8,20,0.6)50%,rgba(0,0,0,0)100%)] flex flex-col gap-2 justify-end p-10 w-full h-full">
+                        <p class="font-medium">IT solution</p>
+                        <h4 class="text-xl font-semibold w-2/3">How To Improve IT knowledge</h4>
+                    </div>
+                    <span class="absolute opacity-0 group-hover:opacity-100 right-0 p-5 bottom-0 bg-blue-600 text-lg transition-all">
+                        <i class="fa-solid fa-arrow-right-long pt-1"></i>
+                    </span>
+                </li>
+                <li class="bg-[url('/assets/images/IMG_42.webp')] bg-cover bg-center cursor-pointer w-[350px] h-[420px] relative group">
+                    <div class="bg-[linear-gradient(0deg,rgba(7,14,33,1)20%,rgba(5,8,20,0.6)50%,rgba(0,0,0,0)100%)] flex flex-col gap-2 justify-end p-10 w-full h-full">
+                        <p class="font-medium">Product Design</p>
+                        <h4 class="text-xl font-semibold w-2/3">Develop Your IT Business Growth</h4>
+                    </div>
+                    <span class="absolute opacity-0 group-hover:opacity-100 right-0 p-5 bottom-0 bg-blue-600 text-lg transition-all">
+                        <i class="fa-solid fa-arrow-right-long pt-1"></i>
+                    </span>
+                </li>
+                <li class="bg-[url('/assets/images/IMG_43.webp')] bg-cover bg-center cursor-pointer w-[350px] h-[420px] relative group">
+                    <div class="bg-[linear-gradient(0deg,rgba(7,14,33,1)20%,rgba(5,8,20,0.6)50%,rgba(0,0,0,0)100%)] flex flex-col gap-2 justify-end p-10 w-full h-full">
+                        <p class="font-medium">Consulting</p>
+                        <h4 class="text-xl font-semibold w-4/5">Management Your It Solutions System</h4>
+                    </div>
+                    <span class="absolute opacity-0 group-hover:opacity-100 right-0 p-5 bottom-0 bg-blue-600 text-lg transition-all">
+                        <i class="fa-solid fa-arrow-right-long pt-1"></i>
+                    </span>
+                </li>
+                <li class="bg-[url('/assets/images/IMG_44.webp')] bg-cover bg-center cursor-pointer w-[350px] h-[420px] relative group">
+                    <div class="bg-[linear-gradient(0deg,rgba(7,14,33,1)20%,rgba(5,8,20,0.6)50%,rgba(0,0,0,0)100%)] flex flex-col gap-2 justify-end p-10 w-full h-full">
+                        <p class="font-medium">Software Solutiona</p>
+                        <h4 class="text-xl font-semibold w-2/3">How To Control Your IT Customer</h4>
+                    </div>
+                    <span class="absolute opacity-0 group-hover:opacity-100 right-0 p-5 bottom-0 bg-blue-600 text-lg transition-all">
+                        <i class="fa-solid fa-arrow-right-long pt-1"></i>
+                    </span>
+                </li>
+                <li class="bg-[url('/assets/images/IMG_42.webp')] bg-cover bg-center cursor-pointer w-[350px] h-[420px] relative group">
+                    <div class="bg-[linear-gradient(0deg,rgba(7,14,33,1)20%,rgba(5,8,20,0.6)50%,rgba(0,0,0,0)100%)] flex flex-col gap-2 justify-end p-10 w-full h-full">
+                        <p class="font-medium">Product Design</p>
+                        <h4 class="text-xl font-semibold w-2/3">Develop Your IT Business Growth</h4>
+                    </div>
+                    <span class="absolute opacity-0 group-hover:opacity-100 right-0 p-5 bottom-0 bg-blue-600 text-lg transition-all">
+                        <i class="fa-solid fa-arrow-right-long pt-1"></i>
+                    </span>
+                </li>
+                <li class="bg-[url('/assets/images/IMG_41.webp')] bg-cover bg-center cursor-pointer w-[350px] h-[420px] relative group">
+                    <div class="bg-[linear-gradient(0deg,rgba(7,14,33,1)20%,rgba(5,8,20,0.6)50%,rgba(0,0,0,0)100%)] flex flex-col gap-2 justify-end p-10 w-full h-full">
+                        <p class="font-medium">IT solution</p>
+                        <h4 class="text-xl font-semibold w-2/3">How To Improve IT knowledge</h4>
+                    </div>
+                    <span class="absolute opacity-0 group-hover:opacity-100 right-0 p-5 bottom-0 bg-blue-600 text-lg transition-all">
+                        <i class="fa-solid fa-arrow-right-long pt-1"></i>
+                    </span>
+                </li>
+                <li class="bg-[url('/assets/images/IMG_44.webp')] bg-cover bg-center cursor-pointer w-[350px] h-[420px] relative group">
+                    <div class="bg-[linear-gradient(0deg,rgba(7,14,33,1)20%,rgba(5,8,20,0.6)50%,rgba(0,0,0,0)100%)] flex flex-col gap-2 justify-end p-10 w-full h-full">
+                        <p class="font-medium">Software Solutiona</p>
+                        <h4 class="text-xl font-semibold w-2/3">How To Control Your IT Customer</h4>
+                    </div>
+                    <span class="absolute opacity-0 group-hover:opacity-100 right-0 p-5 bottom-0 bg-blue-600 text-lg transition-all">
+                        <i class="fa-solid fa-arrow-right-long pt-1"></i>
+                    </span>
+                </li>
+                <li class="bg-[url('/assets/images/IMG_43.webp')] bg-cover bg-center cursor-pointer w-[350px] h-[420px] relative group">
+                    <div class="bg-[linear-gradient(0deg,rgba(7,14,33,1)20%,rgba(5,8,20,0.6)50%,rgba(0,0,0,0)100%)] flex flex-col gap-2 justify-end p-10 w-full h-full">
+                        <p class="font-medium">Consulting</p>
+                        <h4 class="text-xl font-semibold w-4/5">Management Your It Solutions System</h4>
+                    </div>
+                    <span class="absolute opacity-0 group-hover:opacity-100 right-0 p-5 bottom-0 bg-blue-600 text-lg transition-all">
+                        <i class="fa-solid fa-arrow-right-long pt-1"></i>
+                    </span>
+                </li>
+            </ul>
+        </div>
     </div>
+    <!-- case studies finish -->
+
+    <!-- team member start -->
+    <div class="my-24 mx-auto">
+        <div class="flex flex-col items-center gap-4">
+            <h4 class="text-blue-600 font-medium tracking-widest">OUR TEAM MEMBER</h4>
+            <h2 class="text-4xl md:text-5xl font-bold text-center md:w-2/5">Meet Our Exclusive Leadership</h2>
+        </div>
+        <ul class="container xl:max-w-[1400px] w-fit grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+            <li class="w-fit relative group">
+                <img src="/assets/images/IMG_11.webp" alt="">
+                <span class="absolute bottom-[-20px] right-[-10px] opacity-0 group-hover:opacity-100 flex flex-col gap-1 px-6 py-4 justify-center items-center bg-blue-600 rounded-md transition-all">
+                    <div>
+                        <ul class="flex gap-2 text-sm text-blue-300">
+                            <li><i class="fa-brands fa-facebook-f hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-twitter hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-behance hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-youtube hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-solid fa-basketball hover:text-white cursor-pointer transition-all"></i></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-lg font-semibold text-white">David John Korla</h4>
+                        <p class="text-sm font-medium text-blue-300">IT CONSULTANT</p>
+                    </div>
+                </span>
+            </li>
+            <li class="w-fit relative group">
+                <img src="/assets/images/IMG_12.webp" alt="">
+                <span class="absolute bottom-[-20px] right-[-10px] opacity-0 group-hover:opacity-100 flex flex-col gap-1 px-6 py-4 justify-center items-center bg-blue-600 rounded-md transition-all">
+                    <div>
+                        <ul class="flex gap-2 text-sm text-blue-300">
+                            <li><i class="fa-brands fa-facebook-f hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-twitter hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-behance hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-youtube hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-solid fa-basketball hover:text-white cursor-pointer transition-all"></i></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-lg font-semibold text-white">David John Korla</h4>
+                        <p class="text-sm font-medium text-blue-300">IT CONSULTANT</p>
+                    </div>
+                </span>
+            </li>
+            <li class="w-fit relative group">
+                <img src="/assets/images/IMG_13.webp" alt="">
+                <span class="absolute bottom-[-20px] right-[-10px] opacity-0 group-hover:opacity-100 flex flex-col gap-1 px-6 py-4 justify-center items-center bg-blue-600 rounded-md transition-all">
+                    <div>
+                        <ul class="flex gap-2 text-sm text-blue-300">
+                            <li><i class="fa-brands fa-facebook-f hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-twitter hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-behance hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-youtube hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-solid fa-basketball hover:text-white cursor-pointer transition-all"></i></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-lg font-semibold text-white">David John Korla</h4>
+                        <p class="text-sm font-medium text-blue-300">IT CONSULTANT</p>
+                    </div>
+                </span>
+            </li>
+            <li class="w-fit relative group">
+                <img src="/assets/images/IMG_14.webp" alt="">
+                <span class="absolute bottom-[-20px] right-[-10px] opacity-0 group-hover:opacity-100 flex flex-col gap-1 px-6 py-4 justify-center items-center bg-blue-600 rounded-md transition-all">
+                    <div>
+                        <ul class="flex gap-2 text-sm text-blue-300">
+                            <li><i class="fa-brands fa-facebook-f hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-twitter hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-behance hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-youtube hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-solid fa-basketball hover:text-white cursor-pointer transition-all"></i></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-lg font-semibold text-white">David John Korla</h4>
+                        <p class="text-sm font-medium text-blue-300">IT CONSULTANT</p>
+                    </div>
+                </span>
+            </li>
+            <li class="w-fit relative group">
+                <img src="/assets/images/IMG_15.webp" alt="">
+                <span class="absolute bottom-[-20px] right-[-10px] opacity-0 group-hover:opacity-100 flex flex-col gap-1 px-6 py-4 justify-center items-center bg-blue-600 rounded-md transition-all">
+                    <div>
+                        <ul class="flex gap-2 text-sm text-blue-300">
+                            <li><i class="fa-brands fa-facebook-f hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-twitter hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-behance hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-youtube hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-solid fa-basketball hover:text-white cursor-pointer transition-all"></i></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-lg font-semibold text-white">David John Korla</h4>
+                        <p class="text-sm font-medium text-blue-300">IT CONSULTANT</p>
+                    </div>
+                </span>
+            </li>
+            <li class="w-fit relative group">
+                <img src="/assets/images/IMG_16.webp" alt="">
+                <span class="absolute bottom-[-20px] right-[-10px] opacity-0 group-hover:opacity-100 flex flex-col gap-1 px-6 py-4 justify-center items-center bg-blue-600 rounded-md transition-all">
+                    <div>
+                        <ul class="flex gap-2 text-sm text-blue-300">
+                            <li><i class="fa-brands fa-facebook-f hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-twitter hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-behance hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-brands fa-youtube hover:text-white cursor-pointer transition-all"></i></li>
+                            <li><i class="fa-solid fa-basketball hover:text-white cursor-pointer transition-all"></i></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-lg font-semibold text-white">David John Korla</h4>
+                        <p class="text-sm font-medium text-blue-300">IT CONSULTANT</p>
+                    </div>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <!-- team member start -->
+
+    <!-- join us start -->
+    <div class="bg-[url('/assets/images/IMG_2006.webp')] my-12 bg-bottom bg-cover h-auto">
+        <div class="bg-blue-600 bg-opacity-90 w-full h-full pt-24 pb-96 px-4 relative flex flex-col items-center gap-6 text-white z-10">
+            <h4 class="font-medium tracking-widest">CONTACT US</h4>
+            <h2 class="text-4xl md:text-5xl font-bold text-center md:w-2/5">Join Us To Get Free Consultations</h2>
+        </div>
+    </div>
+
+        <!-- form join -->
+    <div class="container">
+        <div class="mx-auto xl:max-w-[1100px] flex flex-col lg:flex-row md:justify-between gap-6 md:gap-6 relative top-[-380px] w-full bg-white p-10 md:p-8 xl:p-12 shadow-md z-10">
+        <div>
+            <img class="w-[360px] h-auto" src="/assets/images/IMG_25.webp" alt="">
+        </div>
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-9 lg:w-7/12 justify-stretch">
+            <div class="md:col-span-2">
+                <h3 class="text-3xl lg:text-4xl font-bold md:w-10/12 lg:w-11/12 xl:w-10/12">Don't Hesitate To Contact With Us, Say Hello......</h3>
+            </div>
+            <div class="flex justify-between items-center border-b border-blue-600">
+                <input class="focus:outline-0 pb-2" type="text" placeholder="Full Name Here" name="" id="">
+                <span><i class="fa-solid fa-user text-blue-600"></i></span>
+            </div>
+            <div class="flex justify-between items-center border-b border-blue-600">
+                <input class="focus:outline-0 pb-2" type="email" placeholder="Email Here" name="" id="">
+                <span><i class="fa-solid fa-envelope text-blue-600"></i></i></span>
+            </div>
+            <div class="flex justify-between items-center border-b border-blue-600">
+                <input class="focus:outline-0 pb-2" type="tel" placeholder="Phone No" name="" id="">
+                <span><i class="fa-solid fa-phone-flip text-blue-600"></i></span>
+            </div>
+            <div class="flex justify-between items-center border-b border-blue-600">
+                <input class="focus:outline-0 pb-2" type="text" placeholder="Subject" name="" id="">
+                <span><i class="fa-solid fa-chevron-down text-blue-600"></i></span>
+            </div>
+            <div class="flex justify-between items-start border-b border-blue-600 md:col-span-2 h-24">
+                <input class="focus:outline-0 pb-2" type="text" placeholder="Message Us" name="" id="">
+                <span><i class="fa-solid fa-pen text-blue-600"></i></span>
+            </div>
+            <div class="h-fit">
+                <a class="w-fit py-3 px-6 rounded-md text-white border-2 border-blue-600 bg-blue-600 flex items-center gap-2 hover:bg-blue-950 hover:border-blue-950 transition-all" href="">
+                    <p class="font-semibold text-sm">Send Message</p>
+                    <i class="fa-solid fa-arrow-right-long pt-1"></i>
+                </a>
+            </div>
+        </form>
+        </div>
+    </div>
+    <!-- join us finish -->
+
+    <!-- best agecy for you start -->
+    <div class="container my-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mx-auto xl:max-w-[1100px] mt-[-350px]">
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-4 mb-8">
+                    <h4 class="text-blue-600 font-medium tracking-widest">BEST AGECY FOR YOU</h4>
+                    <h2 class="text-4xl md:text-5xl font-bold">Why Choose Our Solutions</h2>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div class="max-w-lg">
+                        <details className="details" open>
+                            <summary class="flex gap-2 items-center open:rotate-90 cursor-pointer">
+                                <i class="fa-solid fa-arrow-right-long text-gray-500"></i>
+                                <h4 class="text-lg font-semibold text-gray-500">We Provide Professional Service</h4>
+                            </summary>
+                            <div class="mt-3 pl-6">
+                                <p class="text-gray-400 font-medium">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolorec ooe aui ratian voluptatem sequi nesciunt. Neque porro quisquam</p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="max-w-lg">
+                        <details className="details" close>
+                            <summary class="flex gap-2 items-center open:rotate-90 cursor-pointer">
+                                <i class="fa-solid fa-arrow-right-long text-gray-500"></i>
+                                <h4 class="text-lg font-semibold text-gray-500">Stay Up, Stay Running & Protected</h4>
+                            </summary>
+                            <div class="mt-3 pl-6">
+                                <p class="text-gray-400 font-medium">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolorec ooe aui ratian voluptatem sequi nesciunt. Neque porro quisquam</p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="max-w-lg">
+                        <details className="details" close>
+                            <summary class="flex gap-2 items-center open:rotate-90 cursor-pointer">
+                                <i class="fa-solid fa-arrow-right-long text-gray-500"></i>
+                                <h4 class="text-lg font-semibold text-gray-500">Our Experienced Experts</h4>
+                            </summary>
+                            <div class="mt-3 pl-6">
+                                <p class="text-gray-400 font-medium">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolorec ooe aui ratian voluptatem sequi nesciunt. Neque porro quisquam</p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="max-w-lg">
+                        <details className="details" close>
+                            <summary class="flex gap-2 items-center open:rotate-90 cursor-pointer">
+                                <i class="fa-solid fa-arrow-right-long text-gray-500"></i>
+                                <h4 class="text-lg font-semibold text-gray-500">Management Engineering System</h4>
+                            </summary>
+                            <div class="mt-3 pl-6">
+                                <p class="text-gray-400 font-medium">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolorec ooe aui ratian voluptatem sequi nesciunt. Neque porro quisquam</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="grid gird-cols-1 lg:grid-cols-2 gap-8 h-fit">
+                <div class="flex flex-col gap-4">
+                    <div class="flex text-blue-600 gap-2">
+                        <p class="text-5xl">569</p>
+                        <i class="fa-solid fa-plus text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-gray-500">Project Complate</h4>
+                    <p class="text-sm text-gray-500 font-medium sm:w-2/3 md:w-1/3 lg:w-auto">Sed ut perspiciatis unde omnis iste natus error sit voluptsantium doloremque laudantium</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="flex text-blue-600 gap-2">
+                        <p class="text-5xl">569</p>
+                        <i class="fa-solid fa-plus text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-gray-500">Project Complate</h4>
+                    <p class="text-sm text-gray-500 font-medium sm:w-2/3 md:w-1/3 lg:w-auto">Sed ut perspiciatis unde omnis iste natus error sit voluptsantium doloremque laudantium</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="flex text-blue-600 gap-2">
+                        <p class="text-5xl">569</p>
+                        <i class="fa-solid fa-plus text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-gray-500">Project Complate</h4>
+                    <p class="text-sm text-gray-500 font-medium sm:w-2/3 md:w-1/3 lg:w-auto">Sed ut perspiciatis unde omnis iste natus error sit voluptsantium doloremque laudantium</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="flex text-blue-600 gap-2">
+                        <p class="text-5xl">569</p>
+                        <i class="fa-solid fa-plus text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-gray-500">Project Complate</h4>
+                    <p class="text-sm text-gray-500 font-medium sm:w-2/3 md:w-1/3 lg:w-auto">Sed ut perspiciatis unde omnis iste natus error sit voluptsantium doloremque laudantium</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- best agecy for you start -->
+
+    <!-- meet with us start -->
+    <div class="container">
+        <div class="mx-auto xl:max-w-[1100px] bg-[url('/assets/images/IMG-30.jpg')] bg-left bg-cover flex flex-col md:flex-row gap-6 justify-between items-start md:items-center w-full h-full p-12 lg:p-24">
+        <h4 class="text-3xl text-white lg:text-4xl font-bold md:w-8/12 lg:w-6/12">Preparing For Your Business Success</h4>
+        <a class="w-fit py-3 px-6 rounded-md text-white border-2 border-blue-600 bg-blue-600 flex items-center gap-2 hover:bg-blue-950 hover:border-blue-950 transition-all" href="">
+            <p class="font-semibold text-sm">Meet With Us</p>
+            <i class="fa-solid fa-arrow-right-long pt-1"></i>
+        </a>
+    </div>
+    </div>
+    <!-- meet with us finish -->
+
+    <!-- latest news start -->
+    <div class="container my-16">
+        <div class="flex flex-col items-center gap-4 mb-8">
+            <h4 class="text-blue-600 font-medium tracking-widest">LATEST NEWS</h4>
+            <h2 class="text-4xl md:text-5xl font-bold text-center lg:w-4/12">Read Our Latest News & Blog</h2>
+        </div>
+        <div class="mx-auto w-fit xl:max-w-[1200px] bg-white shadow-md p-12 grid items-center gap-12 sm:gap-6 md:gap-y-10 lg:gap-y-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 z-20">
+            <div class="flex flex-col justify-between gap-6 max-w-md">
+                <div class="flex flex-col gap-3">
+                    <p class="text-blue-600 font-medium text-sm">By Admin, 05 Aug 2019</p>
+                    <h3 class="text-xl font-bold">Monthly Web Development Update Design Ethics & Clarity Over Solution System</h3>
+                </div>
+                <p class="text-sm text-gray-600 leading-6">Nemo enim ipsam voluptatem quia voluptas sip erntur aut odit aut fugit, sed quia consequunturm agni dolores eos qui ratione voluptatem</p>
+                <a class="w-fit py-3 px-6 rounded-md text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
+                    <p class="font-semibold text-sm group-hover:text-white">Read More</p>
+                    <i class="fa-solid fa-arrow-right-long pt-1 group-hover:text-white"></i>
+                </a>
+            </div>
+            <div class="flex flex-col justify-between gap-6 max-w-md">
+                <div class="flex flex-col gap-3">
+                    <p class="text-blue-600 font-medium text-sm">By Admin, 05 Aug 2019</p>
+                    <h3 class="text-xl font-bold">Design System: What It Is And How To Create One Using Indigo Design Sence</h3>
+                </div>
+                <p class="text-sm text-gray-600 leading-6">Nemo enim ipsam voluptatem quia voluptas sip erntur aut odit aut fugit, sed quia consequunturm agni dolores eos qui ratione voluptatem</p>
+                <a class="w-fit py-3 px-6 rounded-md text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
+                    <p class="font-semibold text-sm group-hover:text-white">Read More</p>
+                    <i class="fa-solid fa-arrow-right-long pt-1 group-hover:text-white"></i>
+                </a>
+            </div>
+            <div class="flex flex-col justify-between gap-6 max-w-md">
+                <div class="flex flex-col gap-3">
+                    <p class="text-blue-600 font-medium text-sm">By Admin, 05 Aug 2019</p>
+                    <h3 class="text-xl font-bold">How We Used WebAssembly To Speed Up Our Web App By 20X (Case Study)</h3>
+                </div>
+                <p class="text-sm text-gray-600 leading-6">Nemo enim ipsam voluptatem quia voluptas sip erntur aut odit aut fugit, sed quia consequunturm agni dolores eos qui ratione voluptatem</p>
+                <a class="w-fit py-3 px-6 rounded-md text-gray-950 border-2 border-blue-600 flex items-center gap-2 hover:bg-blue-600 transition-all group" href="">
+                    <p class="font-semibold text-sm group-hover:text-white">Read More</p>
+                    <i class="fa-solid fa-arrow-right-long pt-1 group-hover:text-white"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- latest news finish -->
+
+    <!-- footer start -->
+    <div class="bg-blue-950 p-8 md:p-12">
+        <div class="container xl:max-w-[1100px] flex flex-col gap-16 text-sm text-gray-400 font-medium w-full">
+            <div class="flex flex-col md:flex-row justify-between gap-6 md:gap-12">
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-white text-3xl font-bold">OmniVus.</h1>
+                    <p>IT Service & Technology</p>
+                </div>
+                <div class="h-auto md:w-7/12 lg:w-9/12">
+                    <p class="leading-6">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
+                </div>
+            </div>
+            <div class="flex flex-col flex-wrap sm:flex-row items-start gap-8 justify-between p-8 md:p-12 border border-gray-600 border-opacity-30">
+                <div class="flex flex-col gap-4 justify-self-center">
+                    <p class="text-lg font-semibold text-white">Our Services</p>
+                    <ul class="flex flex-col gap-2">
+                        <li>IT Solution</li>
+                        <li>Product Strategy</li>
+                        <li>Product Engineering</li>
+                        <li>Software Development</li>
+                        <li>UX / UI Design</li>
+                        <li>App Development</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-start sm:w-2/3 lg:w-5/12 py-8 border-y sm:border-y-0 sm:border-l sm:py-0 sm:px-8 lg:border-x lg:px-12  border-gray-600 border-opacity-30">
+                    <p class="text-lg font-semibold text-white">Recent News</p>
+                    <div class="flex gap-2 py-8">
+                        <div class="w-[100px] bg-[url('/assets/images/IMG_1.webp')] bg-cover bg-center">
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p>Managing Z-Index In Component-Based</p>
+                            <p>10 Aug 2019</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="w-[100px] bg-[url('/assets/images/IMG_6.webp')] bg-cover bg-center">
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p>Going Serverless With Cloudflare Workers</p>
+                            <p>15 Aug 2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 justify-self-center lg:justify-self-end">
+                    <p class="text-lg font-semibold text-white">Quick Links</p>
+                    <ul class="flex flex-col gap-2 items-start">
+                        <li>About Us</li>
+                        <li>Our Services</li>
+                        <li>Pick Up Location</li>
+                        <li>Privacy Policy</li>
+                        <li>Where to Find Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer finish -->
 
      <script src="https://kit.fontawesome.com/8e8b8a9391.js" crossorigin="anonymous"></script>
+     <script type="module" src="./main.js"></script>
+     <script type="module" src="./menu.js"></script>
 </body>
 </html>
